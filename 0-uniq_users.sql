@@ -1,8 +1,8 @@
--- 0-uniq_users.sql
--- SQL script to create the 'users' table with unique email constraint
 
+
+-- Task 0: Create a 'users' table with a unique email constraint.
 CREATE TABLE IF NOT EXISTS users (
-    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    id INT AUTO_INCREMENT PRIMARY KEY,
     email VARCHAR(255) NOT NULL UNIQUE,
     name VARCHAR(255)
 );
