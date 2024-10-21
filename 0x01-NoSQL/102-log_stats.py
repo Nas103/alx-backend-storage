@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from pymongo import MongoClient
 
+
 def log_stats():
     """
     Provides stats about Nginx logs stored in MongoDB.
@@ -21,7 +22,7 @@ def log_stats():
         print(f"\tmethod {method}: {count}")
 
     # Number of logs with method=GET and path=/status
-    status_check = collection.count_documents({"method": "GET", "path": "/status"})
+    status_check = collection.count_documents({"method": method})
     print(f"{status_check} status check")
 
     # Top 10 most present IPs
@@ -33,6 +34,7 @@ def log_stats():
     print("IPs:")
     for ip in collection.aggregate(pipeline):
         print(f"\t{ip['_id']}: {ip['count']}")
+
 
 if __name__ == "__main__":
     log_stats()
