@@ -1,0 +1,4 @@
+#!/usr/bin/env mongo
+// my comment
+db = db.getSiblingDB('my_db');
+db.school.find({ name: "Holberton school" }).forEach(printjson);
