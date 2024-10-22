@@ -1,3 +1,3 @@
-#!/usr/bin/env mongo
-db = connect("localhost:27017/" + dbname);
-db.school.find({ name: { $regex: /^Holberton/ } }).forEach(printjson);
+// comment
+
+db.school.find({ name: { $regex: "^Holberton" } })
