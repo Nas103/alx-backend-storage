@@ -1,12 +1,14 @@
 #!/usr/bin/env python3
+"""Module to update school topics."""
 
 
 def update_topics(mongo_collection, name, topics):
-    """
-    Changes all topics of a school document based on the name.
-    :param mongo_collection: pymongo collection object
-    :param name: string, the school name to update
-    :param topics: list of strings, the list of topics approached in the school
+    """Changes all topics of a school document based on the name.
+
+    Args:
+        mongo_collection: The pymongo collection object.
+        name (str): The school name to update.
+        topics (list of str): The list of topics approached in the school.
     """
     mongo_collection.update_many(
         {"name": name},
