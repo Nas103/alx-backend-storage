@@ -1,3 +1,4 @@
 #!/usr/bin/env mongo
-// my comment
-show dbs
+// list att databases
+
+show dbs;
