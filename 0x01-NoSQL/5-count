@@ -1,4 +1,3 @@
-#!/usr/bin/env mongo
-// my comment
-db = db.getSiblingDB('my_db');
-print(db.school.countDocuments({}));
+// Displays the number of documents in the collection school
+
+db.school.countDocuments();
