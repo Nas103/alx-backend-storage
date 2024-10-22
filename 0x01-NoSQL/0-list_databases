@@ -1,4 +1,3 @@
-#!/usr/bin/env mongo
 // list att databases
 
 show dbs;
