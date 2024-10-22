@@ -1,7 +1,6 @@
-#!/usr/bin/env mongo
-// my comment
-db = db.getSiblingDB('my_db');
+// Updates all documents with name="Holberton school", adding the attribute address
+
 db.school.updateMany(
-    { name: "Holberton school" },
-    { $set: { address: "972 Mission street" } }
+  { name: "Holberton school" },  // filter
+  { $set: { address: "972 Mission street" } }  // update operation
 );
