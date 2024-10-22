@@ -1,4 +1,3 @@
-// my comment
+// my comm
 
-db = db.getSiblingDB('my_db');
-db.school.find().forEach(printjson);
+mongo my_db --eval 'db.school.find().forEach(printjson)'
